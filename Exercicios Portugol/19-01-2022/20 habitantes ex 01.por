@@ -4,7 +4,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i, x=4, nFilhos, totalFilhos=0, mediaFilhos=0, cont=0, porcentSalario=0
+		inteiro i, x=20, nFilhos, totalFilhos=0, mediaFilhos=0, cont=0, porcentSalario=0
 		real salario, totalSalario=0.0, mediaSalario=0.0, maiorSalario=0.0
 
 		para(i=0;i<x;i++){
@@ -46,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1035; 
+ * @POSICAO-CURSOR = 328; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
