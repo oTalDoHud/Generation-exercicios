@@ -3,46 +3,38 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro n1[4][6], n2[4][6], m1[4][6], m2[4][6]
+		inteiro vec[10], maiorNumero = 0, cont = 0
+		real media, total = 0.0
 
-		para(inteiro i=0;i<4;i++){
-			para(inteiro j=0;j<6;j++){
-				escreva("\nEntre com um número: ")
-				leia(n1[i][j])
+		//i = linha
+		//j =coluna
+
+		//Receber dados
+		para(inteiro i=0;i<10;i++){
+			escreva("\nEntre com um valor numerico: ")
+			leia(vec[i])
+			total = total + vec[i]
+
+			se(vec[i] > maiorNumero){
+				maiorNumero = vec[i]//11
 			}
 		}
 
-		para(inteiro i=0;i<4;i++){
-			para(inteiro j=0;j<6;j++){
-				escreva("\nEntre com um número: ")
-				leia(n2[i][j])
+		para(inteiro i=0;i<10;i++){//3 [7-11-3-11]
+			se(vec[i] == maiorNumero){// 11 == 11
+				cont++//2
 			}
 		}
 
-		para(inteiro i=0;i<4;i++){
-			para(inteiro j=0;j<6;j++){
-				m1[i][j] = n1[i][j] + n2[i][j]
-			}
+		para(inteiro i=0;i<10;i++){
+			escreva("\n" + vec[i])
 		}
+		
+		media = total / 10
 
-		para(inteiro i=0;i<4;i++){
-			para(inteiro j=0;j<6;j++){
-				m2[i][j] = n1[i][j] - n2[i][j]
-			}
-		}
-
-		para(inteiro i=0;i<4;i++){
-			para(inteiro j=0;j<6;j++){
-				escreva("\nMatriz de soma: " + m1[i][j])
-			}
-		}
-
-		para(inteiro i=0;i<4;i++){
-			para(inteiro j=0;j<6;j++){
-				escreva("\nMatriz de subtração: " + m2[i][j])
-			}
-		}
-				
+		escreva("\nMedia: " + media)
+		escreva("\nMario número: " + maiorNumero)
+		escreva("\nAparição do maior número: " + cont)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -50,9 +42,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 440; 
+ * @POSICAO-CURSOR = 448; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {n1, 6, 10, 2}-{n2, 6, 20, 2}-{m1, 6, 30, 2}-{m2, 6, 40, 2};
+ * @SIMBOLOS-INSPECIONADOS = {vec, 6, 10, 3}-{media, 7, 7, 5}-{total, 7, 14, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
