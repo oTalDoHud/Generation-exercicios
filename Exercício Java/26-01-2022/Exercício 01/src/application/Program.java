@@ -7,7 +7,6 @@ public class Program {
 //	em anos, meses e dias e mostre-a expressa apenas em dias.
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);//leia
-		//double anos;
 		
 		System.out.print("Entre quantidade de anos: ");//Escreva
 		double anos = leia.nextDouble();
