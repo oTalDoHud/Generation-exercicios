@@ -31,7 +31,7 @@ public class Program {
 			}
 		}
 		
-		System.out.println(cont + " valores são maior que 10.");
+		System.out.println(cont + " valore/s são maior que 10.");
 		
 		leia.close();
 	}
