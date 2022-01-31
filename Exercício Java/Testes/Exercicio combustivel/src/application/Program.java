@@ -47,6 +47,6 @@ public class Program {
 		System.out.println(litros);
 		System.out.println(preco);
 		
-		
+		sc.close();
 	}
 }
