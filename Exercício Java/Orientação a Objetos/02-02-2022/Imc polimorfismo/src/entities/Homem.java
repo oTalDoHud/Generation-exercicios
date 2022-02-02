@@ -13,5 +13,6 @@ public class Homem extends Pessoa{
 	@Override
 	public double imc() {//calcula o imc
 		return peso / (altura * altura);
+		
 	}
 }

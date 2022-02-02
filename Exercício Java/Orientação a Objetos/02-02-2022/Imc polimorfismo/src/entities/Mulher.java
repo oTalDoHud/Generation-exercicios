@@ -9,6 +9,11 @@ public class Mulher extends Pessoa{
 
 	@Override
 	public double imc() {//calcula o imc
-		return peso / (altura * altura);
+		return peso * peso / (altura * altura);
+	}
+	
+	public void imprimirMulher(Mulher m) {
+		System.out.println("A imc da cliente: " 
+				+ m.getNome() + " é de:  " + m.imc());
 	}
 }

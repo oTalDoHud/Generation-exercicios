@@ -10,8 +10,7 @@ public class Program {
 		
 		Mulher carol = new Mulher("Carolina Lopes", 60, 1.77);
 		
-		System.out.println("A imc da cliente: " 
-				+ carol.getNome() + " é de:  " + carol.imc());
+		carol.imprimirMulher(carol);
 		
 		System.out.println("A imc da cliente: " 
 				+ hud.getNome() + " é de:  " + hud.imc());
