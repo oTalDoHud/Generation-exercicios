@@ -1,7 +1,5 @@
 package application;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
-
 import entities.Cachorro;
 import entities.Cavalo;
 import entities.Preguica;
